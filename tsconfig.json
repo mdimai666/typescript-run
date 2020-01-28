@@ -1,0 +1,34 @@
+{
+  "mode": "'development",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "target": "es5", //wa es6 - but only se5 work on Cordova
+    "strict": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "noImplicitThis": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "outDir": "dist/",
+    // "module": "es2015",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "types": [
+      "node"
+    ]
+  },
+  "types": [
+    "src/types.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src-cordova"
+  ],
+  "include": [
+    "src/**/*.ts",
+  ]
+}
